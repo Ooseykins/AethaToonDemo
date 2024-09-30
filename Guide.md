@@ -10,9 +10,9 @@ I will recommend values for some of these material properties that I consider go
 
 This guide will show "before-and-after" pictures using a complete model, it can be helpful to open these two images in their own tabs, so you can click between the two to spot the differences. The scene used for these screenshots uses only a directional light and skybox for lighting. These are some screenshots of the complete model I'll reference later in the guide.
 
-![Bust example](/E:/Github/AethaToonDemo/AethaToonDemo/Examples/GuideImages/FinalLookClose.png)
+![Bust example](https://raw.githubusercontent.com/Ooseykins/AethaToonDemo/refs/heads/main/Examples/GuideImages/FinalLookClose.png)
 
-![Full body example](/E:/Github/AethaToonDemo/AethaToonDemo/Examples/GuideImages/FinalLookTall.png)
+![Full body example](https://raw.githubusercontent.com/Ooseykins/AethaToonDemo/refs/heads/main/Examples/GuideImages/FinalLookTall.png)
 
 ---
 
