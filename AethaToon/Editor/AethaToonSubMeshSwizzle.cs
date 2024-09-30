@@ -56,8 +56,7 @@ public class AethaToonSubMeshSwizzle : EditorWindow
             submeshes.Add(targetMesh.GetSubMesh(i));
         }
         submeshes = submeshes.OrderBy(x => x.vertexCount + x.firstVertex * -133).ToList();
-
-        int totalSubmeshes = 0;
+        
         for (int i = 0; i < targetMesh.subMeshCount; i++)
         {
             var subMesh = targetMesh.GetSubMesh(i);
@@ -66,7 +65,7 @@ public class AethaToonSubMeshSwizzle : EditorWindow
             GUI.backgroundColor = Color.HSVToRGB(h, 0.5f, 1f);
             GUILayout.BeginHorizontal("Box");
             bool canGoLeft = i > 0;
-            if (GUILayout.Button("", GUILayout.Width(50)) && canGoLeft)
+            if (GUILayout.Button("UP", GUILayout.Width(50)) && canGoLeft)
             {
                 SwapSubmesh(targetMesh, i, i-1);
                 if (_alsoMoveMaterials && sharedMaterials.Length > i-1)
@@ -88,7 +87,7 @@ public class AethaToonSubMeshSwizzle : EditorWindow
             }
             GUILayout.Label(label);
             bool canGoRight = i != targetMesh.subMeshCount-1;
-            if (GUILayout.Button("", GUILayout.Width(50)) && canGoRight)
+            if (GUILayout.Button("DOWN", GUILayout.Width(50)) && canGoRight)
             {
                 SwapSubmesh(targetMesh, i, i+1);
                 if (_alsoMoveMaterials && sharedMaterials.Length > i+1)
@@ -105,16 +104,14 @@ public class AethaToonSubMeshSwizzle : EditorWindow
             }
             GUI.backgroundColor = c;
             GUILayout.EndHorizontal();
-            totalSubmeshes = i;
         }
 
-        while (totalSubmeshes < sharedMaterials.Length-1)
+        for (int i = submeshes.Count; i < sharedMaterials.Length; i++)
         {
             GUILayout.BeginHorizontal("Box");
-            string label = $"{sharedMaterials[totalSubmeshes].name}";
+            string label = $"{sharedMaterials[i].name}";
             GUILayout.Label(label);
             GUILayout.EndHorizontal();
-            totalSubmeshes++;
         }
         GUILayout.Space(15);
     }
