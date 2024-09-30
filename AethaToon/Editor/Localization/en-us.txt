@@ -1,0 +1,188 @@
+Interested in helping translate AethaToon? DM me, @ooseykins on Twitter
+
+Endonym=English US
+TranslationNote=
+
+VERSION=v1.0.0
+
+HeaderEditorSettings=Inspector settings
+SelectLanguage=Select language: English US
+OptionShowCopyButton=Show material property name copy buttons
+OptionShowExperimental=Show experimental options
+OptionShowResetButton=Show reset default property buttons
+UndoResetEntry=Reset default property 
+OptionSetToRetail=Convert to full version
+OptionSetToDemo=Downgrade to demo version
+UndoConvertEntry=Convert AethaToon version
+DemoVersionText=This is the demo version of AethaToon! Get the full version:
+FullVersionText=Thank you for purchasing the full version of AethaToon!
+
+HeaderMainTexture=Main texture
+_MainTex=Main texture
+_Opacity=Opacity
+_Cutoff=Cutout threshold
+_Tint=Tint
+_FresnelTint=Fresnel tint
+_FresnelTintBias=Bias
+_FresnelTintPower=Power
+_FresnelTintBlendMode=Fresnel tint blend mode
+_Normals=Normals
+_NormalScale=Normal scale
+_Emissive=Emissive
+_EmissiveTint=Emissive tint
+_ReducePerspective=Reduce perspective
+
+HeaderLightAndShadow=Light and shadow
+HeaderLightColors=Colors
+_IndirectDiffuseTint=Ambient light
+_IndirectDiffuseTintTooltip=Sometimes called 'indirect diffuse' or 'skybox lighting'
+_ShadowTint=Shadow
+_ShadowTintTooltip=Tint only areas that are in shadow
+_DirectionalLightTint=Directional light
+_LightTint=Non-directional light
+HeaderShadowBlending=Shadow blending
+_ShadowStart=Start
+_ShadowStartTooltip=The start of the darkest part of the shadow. 0.5 is 'realistic'
+_FixDeepShadows=Fix deep shadows
+_FixDeepShadowsTooltip=When using shadow start values less than 0.5, this fixes awkward spot shadows when the light source is behind the subject
+_DirectionalShadowSoftness=Directional softness
+_ShadowSoftness=Non-directional softness
+_ShadowmapSoftness=Shadowmap softness
+_ShadowmapSoftnessTooltip=This can sharpen soft dynamic shadows
+_SoftenIndirectLight=Soften indirect light
+_SoftenIndirectLightTooltip=Smooths out light colors coming from indirect light, such as the skybox
+HeaderFadeShadow=Fade shadow strength
+_MinimumShadowValue=Self-shadow
+_MinimumShadowValueTooltip=Reduce the strength of the shadow. Similar to the 'strength' property on a light
+_MinimumCastShadowValue=Shadowmap
+_MinimumCastShadowValueTooltip=Reduce the strength of shadowmap (cast) shadows only
+
+HeaderPBR=PBR - Physically based rendering (realistic material lighting)
+_AETHA_PBR=Use PBR blending
+_PBRMult=PBR strength
+_PBRMultTooltip=This material will use the PBR lighting if it greater/brighter than the toon lighting. This value lets you fine tune how strong the PBR material comes through
+_PBRNormalScale=Normal strength
+_PBRNormalScaleTooltip=Use the main normals, with this strength
+_Metallic=Metallic
+_Smoothness=Smoothness
+_PBRCatchReflections=Catch reflections
+_PBRCatchReflectionsTooltip=Point normals to be perpendicular to light rays, so they catch extra reflections
+_PBRCubemapIntensity=Cubemap/ambient intensity
+_PBRCubemapIntensityTooltip=How intense is reflections/light from ambient sources such as the skybox
+_AETHA_GLITTER=Use glitter effect
+_AETHA_GLITTERTooltip=Point normals randomly using noise to look 'glittery'
+_PBRGlitterIntensity=Intensity
+_PBRGlitterNoiseScale=Scale
+_PBRMask=Mask
+_PBRMaskTooltip=R is coverage, G is metallic, B is smoothness
+
+HeaderOutline=Outline
+_OutlineWidth=Width
+_OutlineWidthTooltip=In pixels
+_OutlineColor=Color
+_OutlineMask=Mask
+_OutlineMaskTooltip=Red channel is coverage
+_OutlineUseLighting=Use main texture & lighting
+_OutlineUseLightingTooltip=Multiply the color by the main texture's color before blending
+_BackFaceFlipSelfShadow=Fix shading for main texture & lighting
+_BackFaceFlipSelfShadowTooltip=Fix shading errors on outlines. This might cause bad shading if the model uses back faces elsewhere
+_OutlineDetailAdjust=Fix details
+_OutlineDetailAdjustTooltip=Shift the outline slightly to cover up clipping in small details, usually negative values look best
+_OutlineFadeStart=Fade Start
+_OutlineFadeStartTooltip=Distance from the camera for the outline to start fading out, in meters
+_OutlineFadeEnd=Fade End
+_OutlineFadeEndTooltip=Distance from the camera for the outline to finish fading out, in meters
+
+HeaderMatcap=Matcap
+_Matcap=Texture
+_MatcapStrength=Alpha-blend strength
+_MatcapEmissive=Emissive texture
+_MatcapEmissiveStrength=Emissive strength
+
+Header2DRimLights=2D Rim light
+_2DRimLightBlendMode=Enable Custom 2D Rim Light
+_2DRimLightColor=Color
+_2DRimLightMainTextureMix=Main texture mix
+_2DRimLightMainTextureMixTooltip=Blend between adding the light color on it's own, and multiplying by the main texture color
+_2DRimLightDepth=Minimum Depth
+_2DRimLightDepthTooltip=How close an object's relative depth can be before it blocks the effect, in meters
+_2DRimLightSoftness=Softness
+_2DRimLightSoftnessTooltip=How soft the effect blends when the relative depth is small
+_2DRimLightWorldOffset=Offset
+_2DRimLightWorldOffsetTooltip=How much to offset the effect along each world axis, in meters
+
+_2DRimLightBlendModeAuto=Enable Automatic 2D Rim Lights
+_2DRimLightAutoStrengthDirectional=Directional intensity
+_2DRimLightAutoStrength=Non-directional intensity
+_2DRimLightAutoMainTextureMix=Main texture mix
+_2DRimLightAutoMainTextureMixTooltip=Blend between adding the light color on it's own, and multiplying by the main texture color
+_2DRimLightAutoDepth=Minimum Depth
+_2DRimLightAutoDepthTooltip=How close an object's relative depth can be before it blocks the effect, in meters
+_2DRimLightAutoSoftness=Softness
+_2DRimLightAutoSoftnessTooltip=How soft the effect blends when the relative depth is small
+_2DRimLightAutoOffset=Offset
+_2DRimLightAutoOffsetTooltip=How much to offset the effect, in meters
+_2DRimLightAutoTaper=Angle based blending
+_2DRimLightAutoTaperTooltip=Fade out rim light when it is in line with the camera, such as behind a character
+
+HeaderRimLights=Rim lights
+_AETHA_RIM=Use rim lights
+_Rim1Color=Color
+_Rim1Power=Power
+_Rim1Bias=Bias
+_Rim1Start=Start
+_Rim1Softness=Softness
+
+HeaderRimLightVectors=Combine these vectors to mix a rim light direction. Set to 0 for no weight
+_Rim1WorldDirection=World Direction
+_Rim1WorldDirectionTooltip=X, Y, Z world direction
+_Rim1CameraDirection=Camera Direction
+_Rim1CameraDirectionTooltip=X, Y direction relative to camera right/up
+_Rim1ViewWeight=View Direction Weight
+_Rim1ViewWeightTooltip=How much to blend view direction (view direction is 'standard')
+
+_Rim2Color=Color
+_Rim2Power=Power
+_Rim2Bias=Bias
+_Rim2Start=Start
+_Rim2Softness=Softness
+
+_Rim2WorldDirection=World Direction
+_Rim2WorldDirectionTooltip=X, Y, Z world direction
+_Rim2CameraDirection=Camera Direction
+_Rim2CameraDirectionTooltip=X, Y direction relative to camera right/up
+_Rim2ViewWeight=View Direction Weight
+_Rim2ViewWeightTooltip=How much to blend view direction (view direction is 'standard')
+
+_RimMask=Mask rim lights
+_RimMaskTooltip=Red channel controls masking
+
+HeaderStylized=Stylized texture (halftone, dither, crosshatch)
+_Stylized=Use stylized
+_StylizedTexture=Texture
+_StylizedTextureTooltip=Uses red channel only
+_StylizedTextureScale=Scale
+_StylizedTextureScaleTooltip=Screen space size in pixels
+_FresnelTintUseStylized=Fresnel tint
+_UseStylizedShadow=Shadows
+_Rim1Stylized=Rim 1
+_Rim2Stylized=Rim 2
+
+
+HeaderStencil=Render and stencil
+HeaderStencilSettings=Stencil settings
+_CullMode=Culling mode
+_StencilReference=Reference
+_StencilWriteMask=Write mask
+_StencilReadMask=Read mask
+_StencilComparison=Comparison
+_StencilPass=Pass
+_StencilFail=Fail
+_StencilZFail=Z fail
+
+StencilPresetDropdownLabel=Use preset, overwrite current settings
+StencilPresetDefault=Default
+StencilPresetEye=Eye stencil
+StencilPresetHair=Hair stencil
+StencilPresetHairTransparent=Hair stencil (transparent)
+StencilPresetFakeHairShadow=Fake hair shadow
